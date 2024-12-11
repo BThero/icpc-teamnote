@@ -8,6 +8,11 @@
 \usepackage{color}
 \usepackage{indentfirst}
 
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries}{\thechapter.}{0.5em}{\Huge}
+\titlespacing*{\chapter}{0pt}{-19pt}{0pt}
 
 \setlength{\columnseprule}{0.1pt}
 \pagenumbering{arabic}
@@ -46,8 +51,12 @@
 % \date{}
 \date{Compiled on \today}
 
-
-
+\renewcommand\chapter{
+	\global\@topnum\z@
+	\secdef
+	\@chapter
+	\@schapter
+}
 
 \newboolean{BangShowUsage}
 \setboolean{BangShowUsage}{false} 
