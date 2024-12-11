@@ -4,7 +4,7 @@
 % twocolumn
 % \documentclass[landscape, 8pt, a4paper, oneside, twocolumn]{extarticle}
 
-\documentclass[landscape, 8pt, a4paper, oneside]{extarticle}
+\documentclass[landscape, 8pt, a4paper, oneside]{extreport}
 \usepackage{kotex}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -12,6 +12,7 @@
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{titlesec}
+\usepackage{graphicx}
 
 \usepackage{teamnote}
 
@@ -29,9 +30,12 @@
 
 \begin{document}
 
+\maketitlepage
+\pagebreak
+
 \begin{multicols*}{3}
 
-\maketitlepage
+\tableofcontents
 
 % break column
 % \vfill\null\columnbreak
@@ -39,13 +43,25 @@
 % Make Pagebreak if you want.
 % \pagebreak
 
-\section{contest}
+\input{code/contest/chapter.tex}
 
-\TeamnoteImport{template.cpp}
-{code/contest/template.cpp}
+\input{code/math/chapter.tex}
 
-\TeamnoteImport{Troubleshoot}
-{code/contest/troubleshoot.txt}
+\input{code/data-structures/chapter.tex}
+
+\input{code/numerical/chapter.tex}
+
+\input{code/number-theory/chapter.tex}
+
+\input{code/combinatorial/chapter.tex}
+
+\input{code/graph/chapter.tex}
+
+\input{code/geometry/chapter.tex}
+
+\input{code/strings/chapter.tex}
+
+\input{code/various/chapter.tex}
 
 \end{multicols*}
 
