@@ -1,53 +1,35 @@
-/**
- * Author: Simon Lindholm
- * Date: 2017-04-17
- * License: CC0
- * Source: folklore
- * Description: Finds all biconnected components in an undirected graph, and
- *  runs a callback for the edges in each. In a biconnected component there
- *  are at least two distinct paths between any two nodes. Note that a node can
- *  be in several components. An edge which is not in a component is a bridge,
- *  i.e., not part of any cycle.
- * Usage:
- *  int eid = 0; ed.resize(N);
- *  for each edge (a,b) {
- *    ed[a].emplace_back(b, eid);
- *    ed[b].emplace_back(a, eid++); }
- *  bicomps([\&](const vi\& edgelist) {...});
- * Time: O(E + V)
- * Status: tested during MIPT ICPC Workshop 2017
- */
-#pragma once
-
-vi num, st;
-vector<vector<pii>> ed;
-int Time;
-template<class F>
-int dfs(int at, int par, F& f) {
-	int me = num[at] = ++Time, top = me;
-	for (auto [y, e] : ed[at]) if (e != par) {
-		if (num[y]) {
-			top = min(top, num[y]);
-			if (num[y] < me)
-				st.push_back(e);
-		} else {
-			int si = sz(st);
-			int up = dfs(y, e, f);
-			top = min(top, up);
-			if (up == me) {
-				st.push_back(e);
-				f(vi(st.begin() + si, st.end()));
-				st.resize(si);
-			}
-			else if (up < me) st.push_back(e);
-			else { /* e is a bridge */ }
-		}
-	}
-	return top;
-}
-
-template<class F>
-void bicomps(F f) {
-	num.assign(sz(ed), 0);
-	rep(i,0,sz(ed)) if (!num[i]) dfs(i, -1, f);
+/*
+	adj[v] stores indices of edges
+	E[i] = {u, v}
+*/
+vector<int> stk;
+int tmr;
+ 
+void dfs(int v, int p = -1) {
+  tin[v] = low[v] = ++tmr;
+  stk.push_back(v);
+ 
+  for (int id : adj[v]) {
+    if (id == p) {
+      continue;
+    }
+    int to = E[id][0] ^ E[id][1] ^ v;
+    if (!tin[to]) {
+      dfs(to, id);
+      low[v] = min(low[v], low[to]);
+      if (low[to] >= tin[v]) {
+        vector<int> bc{v};
+        while (bc.back() != to) {
+          bc.push_back(stk.back());
+          stk.pop_back();
+        }
+		// do something with biconnected component bc
+      }
+      if (low[to] > tin[v]) {
+		// edge id is a bridge
+      }
+    } else {
+      low[v] = min(low[v], tin[to]);
+    }
+  }
 }
