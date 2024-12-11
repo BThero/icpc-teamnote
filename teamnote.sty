@@ -26,30 +26,45 @@
 
 \newcommand{\schoolname}{}
 \newcommand{\teamname}{}
-\newcommand{\authorname}{}
-\newcommand{\contestname}{}
+\newcommand{\teammembersfull}{}
+\newcommand{\teammembersshort}{}
 
-\newcommand{\maketitlepage}{\maketitle
-
-\thispagestyle{fancy}
-    
+\newcommand{\maketeampage}{
+	\pagestyle{empty}
+	\setcounter{page}{0}
+	\begin{center}
+		\strut % Magic
+		\vspace{3cm}\\
+		\includegraphics[width=3cm]{code/logo.png}\\
+		{\fontsize{25}{30}\selectfont \schoolname\\}
+		{\fontsize{60}{60}\selectfont \teamname\\}
+		\vspace{0.5cm}
+		{\huge \teammembersfull\\}
+		\vfill
+		{\fontsize{21}{25}\selectfont \today}\\
+		\vspace{0.5cm}
+		\vspace{1cm}
+	\end{center}
+	\clearpage
+	\pagestyle{fancy}
 }
+
 \DeclareRobustCommand{\teamnote}[4]{
 	\renewcommand{\schoolname}{#1}
     \renewcommand{\teamname}{#2}
-    \renewcommand{\authorname}{#3}
-    \renewcommand{\contestname}{#4}
+    \renewcommand{\teammembersfull}{#3}
+	\renewcommand{\teammembersshort}{#4}
 }
 \pagestyle{fancy}
-\lhead{\schoolname{} -- \teamname}
+\lhead{\schoolname{} -- \teamname (\teammembersshort)}
 \rhead{Page \thepage{} of
 \ifthenelse{\pageref{LastPage} < 26}{\pageref{LastPage}}{\textcolor{red}{\textbf{\pageref{LastPage}}}}}
 \fancyfoot{}
 
-\title{Team Note of \teamname}
-\author{\authorname\\\\\contestname}
+\title{\teamname}
+\author{\teammembersfull\\\\}
 % \date{}
-\date{Compiled on \today}
+\date{\today}
 
 \renewcommand\chapter{
 	\global\@topnum\z@
