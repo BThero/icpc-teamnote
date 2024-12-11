@@ -1,8 +1,4 @@
 /**
- * Author: chilli, Takanori MAEHARA
- * Date: 2020-04-03
- * License: CC0
- * Source: https://github.com/spaghetti-source/algorithm/blob/master/graph/gomory_hu_tree.cc#L102
  * Description: Given a list of edges representing an undirected flow graph,
  * returns edges of the Gomory-Hu tree. The max flow between any pair of
  * vertices is given by minimum edge weight along the Gomory-Hu tree path.
@@ -14,8 +10,6 @@
  * pairs network flow analysis". PushRelabel is used here, but any flow
  * implementation that supports `leftOfMinCut` also works.
  */
-#pragma once
-
 #include "PushRelabel.h"
 
 typedef array<ll, 3> Edge;

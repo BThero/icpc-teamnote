@@ -1,13 +1,7 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-03-15
- * License: CC0
- * Source: own work
  * Description: Self-explanatory methods for string hashing.
  * Status: stress-tested
  */
-#pragma once
-
 // Arithmetic mod 2^64-1. 2x slower than mod 2^64 and more
 // code, but works on evil test data (e.g. Thue-Morse, where
 // ABBA... and BAAB... of length 2^10 hash the same mod 2^64).

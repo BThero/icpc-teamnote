@@ -1,8 +1,4 @@
 /**
- * Author: Victor Lecomte, chilli
- * Date: 2019-10-31
- * License: CC0
- * Source: https://vlecomte.github.io/cp-geo.pdf
  * Description: Finds the external tangents of two circles, or internal if r2 is negated.
  * Can return 0, 1, or 2 tangents -- 0 if one circle contains the other (or overlaps it, in the internal case, or if the circles are the same);
  * 1 if the circles are tangent to each other (in which case .first = .second and the tangent line is perpendicular to the line between the centers).
@@ -10,8 +6,6 @@
  * To find the tangents of a circle with a point set r2 to 0.
  * Status: tested
  */
-#pragma once
-
 #include "Point.h"
 
 template<class P>

@@ -1,8 +1,4 @@
 /**
- * Author: chilli, SJTU, pajenegod
- * Date: 2020-03-04
- * License: CC0
- * Source: own
  * Description: Pollard-rho randomized factorization algorithm. Returns prime
  * factors of a number, in arbitrary order (e.g. 2299 -> \{11, 19, 11\}).
  * Time: $O(n^{1/4})$, less for numbers with small factors.
@@ -46,8 +42,6 @@
  *   for "S is in [-c, 2c)" goes through unchanged, while S < 2^63 now follows
  *   from S < 2c and S = x^2 (mod c) together implying S < c + i^2.)
  */
-#pragma once
-
 #include "ModMulLL.h"
 #include "MillerRabin.h"
 

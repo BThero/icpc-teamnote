@@ -1,14 +1,8 @@
 /**
- * Author: Simon Lindholm
- * Date: 2016-07-23
- * License: CC0
- * Source: me
  * Description: BumpAllocator for STL containers.
  * Usage: vector<vector<int, small<int>>> ed(N);
  * Status: tested
  */
-#pragma once
-
 char buf[450 << 20] alignas(16);
 size_t buf_ind = sizeof buf;
 

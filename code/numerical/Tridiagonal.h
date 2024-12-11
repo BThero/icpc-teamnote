@@ -1,8 +1,4 @@
 /**
- * Author: Ulf Lundstrom, Simon Lindholm
- * Date: 2009-08-15
- * License: CC0
- * Source: https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
  * Description: $x=\textrm{tridiagonal}(d,p,q,b)$ solves the equation system
 \[
 \left(\begin{array}{c}b_0\\b_1\\b_2\\b_3\\\vdots\\b_{n-1}\end{array}\right) =
@@ -31,8 +27,6 @@ the algorithm is numerically stable and neither \texttt{tr} nor the check for \t
  * Time: O(N)
  * Status: Brute-force tested mod 5 and 7 and stress-tested for real matrices obeying the criteria above.
  */
-#pragma once
-
 typedef double T;
 vector<T> tridiagonal(vector<T> diag, const vector<T>& super,
 		const vector<T>& sub, vector<T> b) {

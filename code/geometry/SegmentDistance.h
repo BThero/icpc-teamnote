@@ -1,8 +1,4 @@
 /**
- * Author: Ulf Lundstrom
- * Date: 2009-03-21
- * License: CC0
- * Source:
  * Description:\\
 \begin{minipage}{75mm}
 Returns the shortest distance between point p and the line segment from point s to e.
@@ -16,8 +12,6 @@ Returns the shortest distance between point p and the line segment from point s 
  * 	bool onSegment = segDist(a,b,p) < 1e-10;
  * Status: tested
  */
-#pragma once
-
 #include "Point.h"
 
 typedef Point<double> P;

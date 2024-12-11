@@ -1,13 +1,7 @@
 /**
- * Author: Simon Lindholm
- * Date: 2016-09-06
- * License: CC0
- * Source: me
  * Description: To get all uniquely determined values of $x$ back from SolveLinear, make the following changes:
  * Status: tested on kattis:equationsolverplus, stress-tested
  */
-#pragma once
-
 #include "SolveLinear.h"
 
 rep(j,0,n) if (j != i) // instead of rep(j,i+1,n)

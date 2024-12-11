@@ -1,8 +1,4 @@
 /**
- * Author: Benjamin Qi, chilli
- * Date: 2020-04-04
- * License: CC0
- * Source: https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/Hungarian.h
  * Description: Given a weighted bipartite graph, matches every node on
  * the left with a node on the right such that no
  * nodes are in two matchings and the sum of the edge weights is minimal. Takes
@@ -12,8 +8,6 @@
  * Time: O(N^2M)
  * Status: Tested on kattis:cordonbleu, stress-tested
  */
-#pragma once
-
 pair<int, vi> hungarian(const vector<vi> &a) {
 	if (a.empty()) return {0, {}};
 	int n = sz(a) + 1, m = sz(a[0]) + 1;

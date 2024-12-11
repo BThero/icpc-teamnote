@@ -1,8 +1,4 @@
 /**
- * Author: Lucian Bicsi
- * Date: 2018-02-14
- * License: CC0
- * Source: Chinese material
  * Description: Generates the $k$'th term of an $n$-order
  * linear recurrence $S[i] = \sum_j S[i-j-1]tr[j]$,
  * given $S[0 \ldots \ge n-1]$ and $tr[0 \ldots n-1]$.
@@ -12,8 +8,6 @@
  * Time: O(n^2 \log k)
  * Status: bruteforce-tested mod 5 for n <= 5
  */
-#pragma once
-
 const ll mod = 5; /** exclude-line */
 
 typedef vector<ll> Poly;

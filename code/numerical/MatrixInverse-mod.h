@@ -1,7 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2016-12-08
- * Source: The regular matrix inverse code
  * Description: Invert matrix $A$ modulo a prime.
  * Returns rank; result is stored in $A$ unless singular (rank < n).
  * For prime powers, repeatedly set $A^{-1} = A^{-1} (2I - AA^{-1})\  (\text{mod }p^k)$ where $A^{-1}$ starts as
@@ -9,8 +6,6 @@
  * Time: O(n^3)
  * Status: Slightly tested
  */
-#pragma once
-
 #include "../number-theory/ModPow.h"
 
 int matInv(vector<vector<ll>>& A) {

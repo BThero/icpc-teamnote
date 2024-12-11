@@ -1,8 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2018-07-15
- * License: CC0
- * Source: Wikipedia
  * Description: Given $N$ and a real number $x \ge 0$, finds the closest rational approximation $p/q$ with $p, q \le N$.
  * It will obey $|p/q - x| \le 1/qN$.
  *

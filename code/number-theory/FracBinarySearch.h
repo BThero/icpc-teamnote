@@ -1,7 +1,4 @@
 /**
- * Author: Lucian Bicsi, Simon Lindholm
- * Date: 2017-10-31
- * License: CC0
  * Description: Given $f$ and $N$, finds the smallest fraction $p/q \in [0, 1]$
  * such that $f(p/q)$ is true, and $p, q \le N$.
  * You may want to throw an exception from $f$ if it finds an exact solution,

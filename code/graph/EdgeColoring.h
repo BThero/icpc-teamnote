@@ -1,8 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2020-10-12
- * License: CC0
- * Source: https://en.wikipedia.org/wiki/Misra_%26_Gries_edge_coloring_algorithm
  * https://codeforces.com/blog/entry/75431 for the note about bipartite graphs.
  * Description: Given a simple, undirected graph with max degree $D$, computes a
  * $(D + 1)$-coloring of the edges such that no neighboring edges share a color.
@@ -11,8 +7,6 @@
  * Time: O(NM)
  * Status: stress-tested, tested on kattis:gamescheduling
  */
-#pragma once
-
 vi edgeColoring(int N, vector<pii> eds) {
 	vi cc(N + 1), ret(sz(eds)), fan(N), free(N), loc;
 	for (pii e : eds) ++cc[e.first], ++cc[e.second];

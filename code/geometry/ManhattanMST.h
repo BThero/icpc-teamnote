@@ -1,8 +1,4 @@
 /**
- * Author: chilli, Takanori MAEHARA
- * Date: 2019-11-02
- * License: CC0
- * Source: https://github.com/spaghetti-source/algorithm/blob/master/geometry/rectilinear_mst.cc
  * Description: Given N points, returns up to 4*N edges, which are guaranteed
  * to contain a minimum spanning tree for the graph with edge weights w(p, q) =
  * |p.x - q.x| + |p.y - q.y|. Edges are in the form (distance, src, dst). Use a
@@ -10,7 +6,6 @@
  * Time: O(N \log N)
  * Status: Stress-tested
  */
-#pragma once
 #include "Point.h"
 
 typedef Point<int> P;

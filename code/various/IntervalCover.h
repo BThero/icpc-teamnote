@@ -1,14 +1,10 @@
 /**
- * Author: Johan Sannemo
- * License: CC0
  * Description: Compute indices of smallest set of intervals covering another interval.
  * Intervals should be [inclusive, exclusive). To support [inclusive, inclusive],
  * change (A) to add \texttt{|| R.empty()}. Returns empty set on failure (or if G is empty).
  * Time: O(N \log N)
  * Status: Tested on kattis:intervalcover
  */
-#pragma once
-
 template<class T>
 vi cover(pair<T, T> G, vector<pair<T, T>> I) {
 	vi S(sz(I)), R;

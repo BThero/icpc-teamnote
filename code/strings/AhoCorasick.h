@@ -1,8 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-02-18
- * License: CC0
- * Source: marian's (TC) code
  * Description: Aho-Corasick automaton, used for multiple pattern matching.
  * Initialize with AhoCorasick ac(patterns); the automaton start node will be at index 0.
  * find(word) returns for each position the index of the longest word that ends there, or -1 if none.
@@ -15,8 +11,6 @@
  * find(x) is $O(N)$, where N = length of x. findAll is $O(NM)$.
  * Status: stress-tested
  */
-#pragma once
-
 struct AhoCorasick {
 	enum {alpha = 26, first = 'A'}; // change this!
 	struct Node {

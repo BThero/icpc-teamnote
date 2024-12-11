@@ -1,16 +1,10 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-02-23
- * License: CC0
- * Source: http://en.wikipedia.org/wiki/Bellman-Ford_algorithm
  * Description: Calculates shortest paths from $s$ in a graph that might have negative edge weights.
  * Unreachable nodes get dist = inf; nodes reachable through negative-weight cycles get dist = -inf.
  * Assumes $V^2 \max |w_i| < \tilde{} 2^{63}$.
  * Time: O(VE)
  * Status: Tested on kattis:shortestpath3
  */
-#pragma once
-
 const ll inf = LLONG_MAX;
 struct Ed { int a, b, w, s() { return a < b ? a : -a; }};
 struct Node { ll dist = inf; int prev = -1; };

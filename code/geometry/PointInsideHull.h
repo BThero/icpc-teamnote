@@ -1,8 +1,4 @@
 /**
- * Author: chilli
- * Date: 2019-05-17
- * License: CC0
- * Source: https://github.com/ngthanhtrung23/ACM_Notebook_new
  * Description: Determine whether a point t lies inside a convex hull (CCW
  * order, with no collinear points). Returns true if point lies within
  * the hull. If strict is true, points on the boundary aren't included.
@@ -10,8 +6,6 @@
  * Status: stress-tested
  * Time: O(\log N)
  */
-#pragma once
-
 #include "Point.h"
 #include "sideOf.h"
 #include "OnSegment.h"

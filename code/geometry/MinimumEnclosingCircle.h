@@ -1,14 +1,8 @@
 /**
- * Author: Andrew He, chilli
- * Date: 2019-05-07
- * License: CC0
- * Source: folklore
  * Description: Computes the minimum circle that encloses a set of points.
  * Time: expected O(n)
  * Status: stress-tested
  */
-#pragma once
-
 #include "circumcircle.h"
 
 pair<P, double> mec(vector<P> ps) {

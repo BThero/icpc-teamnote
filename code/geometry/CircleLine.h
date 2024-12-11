@@ -1,16 +1,9 @@
 /**
- * Author: Victor Lecomte, chilli
- * Date: 2019-10-29
- * License: CC0
- * Source: https://vlecomte.github.io/cp-geo.pdf
  * Description: Finds the intersection between a circle and a line.
  * Returns a vector of either 0, 1, or 2 intersection points.
  * P is intended to be Point<double>.
  * Status: unit tested
  */
-
-#pragma once
-
 #include "Point.h"
 
 template<class P>

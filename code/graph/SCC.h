@@ -1,8 +1,4 @@
 /**
- * Author: Lukas Polacek
- * Date: 2009-10-28
- * License: CC0
- * Source: Czech graph algorithms book, by Demel. (Tarjan's algorithm)
  * Description: Finds strongly connected components in a
  * directed graph. If vertices $u, v$ belong to the same component,
  * we can reach $u$ from $v$ and vice versa.
@@ -13,8 +9,6 @@
  * Time: O(E + V)
  * Status: Bruteforce-tested for N <= 5
  */
-#pragma once
-
 vi val, comp, z, cont;
 int Time, ncomps;
 template<class G, class F> int dfs(int j, G& g, F& f) {

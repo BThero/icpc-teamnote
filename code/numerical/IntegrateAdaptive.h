@@ -1,8 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-02-11
- * License: CC0
- * Source: Wikipedia
  * Description: Fast integration using an adaptive Simpson's rule.
  * Usage:
 	double sphereVolume = quad(-1, 1, [](double x) {
@@ -11,8 +7,6 @@
 	return x*x + y*y + z*z < 1; });});});
  * Status: mostly untested
  */
-#pragma once
-
 typedef double d;
 #define S(a,b) (f(a) + 4*f((a+b) / 2) + f(b)) * (b-a) / 6
 

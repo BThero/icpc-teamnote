@@ -1,13 +1,8 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-09-01
- * License: CC0
  * Description: Computes the pair of points at which two circles intersect.
  * Returns false in case of no intersection.
  * Status: stress-tested
  */
-#pragma once
-
 #include "Point.h"
 
 typedef Point<double> P;

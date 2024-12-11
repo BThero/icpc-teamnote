@@ -1,8 +1,4 @@
 /**
- * Author: chilli
- * Date: 2019-04-16
- * License: CC0
- * Source: based on KACTL's FFT
  * Description: ntt(a) computes $\hat f(k) = \sum_x a[x] g^{xk}$ for all $k$, where $g=\text{root}^{(mod-1)/N}$.
  * N must be a power of 2.
  * Useful for convolution modulo specific nice primes of the form $2^a b+1$,
@@ -14,8 +10,6 @@
  * Time: O(N \log N)
  * Status: stress-tested
  */
-#pragma once
-
 #include "../number-theory/ModPow.h"
 
 const ll mod = (119 << 23) + 1, root = 62; // = 998244353

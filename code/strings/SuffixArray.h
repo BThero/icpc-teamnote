@@ -1,8 +1,4 @@
 /**
- * Author: 罗穗骞, chilli
- * Date: 2019-04-11
- * License: Unknown
- * Source: Suffix array - a powerful tool for dealing with strings
  * (Chinese IOI National team training paper, 2009)
  * Description: Builds suffix array for a string.
  * \texttt{sa[i]} is the starting index of the suffix which
@@ -15,8 +11,6 @@
  * Time: O(n \log n)
  * Status: stress-tested
  */
-#pragma once
-
 struct SuffixArray {
 	vi sa, lcp;
 	SuffixArray(string& s, int lim=256) { // or basic_string<int>

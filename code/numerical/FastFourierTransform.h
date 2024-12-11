@@ -1,8 +1,4 @@
 /**
- * Author: Ludo Pulles, chilli, Simon Lindholm
- * Date: 2019-01-09
- * License: CC0
- * Source: http://neerc.ifmo.ru/trains/toulouse/2017/fft2.pdf (do read, it's excellent)
    Accuracy bound from http://www.daemonology.net/papers/fft.pdf
  * Description: fft(a) computes $\hat f(k) = \sum_x a[x] \exp(2\pi i \cdot k x / N)$ for all $k$. N must be a power of 2.
    Useful for convolution:
@@ -17,8 +13,6 @@
  * Details: An in-depth examination of precision for both FFT and FFTMod can be found
  * here (https://github.com/simonlindholm/fft-precision/blob/master/fft-precision.md)
  */
-#pragma once
-
 typedef complex<double> C;
 typedef vector<double> vd;
 void fft(vector<C>& a) {

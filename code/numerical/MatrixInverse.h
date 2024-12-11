@@ -1,6 +1,4 @@
 /**
- * Author: Max Bennedich
- * Date: 2004-02-08
  * Description: Invert matrix $A$. Returns rank; result is stored in $A$ unless singular (rank < n).
  * Can easily be extended to prime moduli; for prime powers, repeatedly
  * set $A^{-1} = A^{-1} (2I - AA^{-1})\  (\text{mod }p^k)$ where $A^{-1}$ starts as
@@ -8,8 +6,6 @@
  * Time: O(n^3)
  * Status: Slightly tested
  */
-#pragma once
-
 int matInv(vector<vector<double>>& A) {
 	int n = sz(A); vi col(n);
 	vector<vector<double>> tmp(n, vector<double>(n));

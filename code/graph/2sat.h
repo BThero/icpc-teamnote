@@ -1,8 +1,4 @@
 /**
- * Author: Emil Lenngren, Simon Lindholm
- * Date: 2011-11-29
- * License: CC0
- * Source: folklore
  * Description: Calculates a valid assignment to boolean variables a, b, c,... to a 2-SAT problem,
  * so that an expression of the type $(a||b)\&\&(!a||c)\&\&(d||!b)\&\&...$
  * becomes true, or reports that it is unsatisfiable.
@@ -17,8 +13,6 @@
  * Time: O(N+E), where N is the number of boolean variables, and E is the number of clauses.
  * Status: stress-tested
  */
-#pragma once
-
 struct TwoSat {
 	int N;
 	vector<vi> gr;

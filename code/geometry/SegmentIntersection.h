@@ -1,8 +1,4 @@
 /**
- * Author: Victor Lecomte, chilli
- * Date: 2019-04-27
- * License: CC0
- * Source: https://vlecomte.github.io/cp-geo.pdf
  * Description:\\
 \begin{minipage}{75mm}
 If a unique intersection point between the line segments going from s1 to e1 and from s2 to e2 exists then it is returned.
@@ -20,8 +16,6 @@ Products of three coordinates are used in intermediate steps so watch out for ov
  *   cout << "segments intersect at " << inter[0] << endl;
  * Status: stress-tested, tested on kattis:intersection
  */
-#pragma once
-
 #include "Point.h"
 #include "OnSegment.h"
 

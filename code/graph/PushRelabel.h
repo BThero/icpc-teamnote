@@ -1,16 +1,9 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-02-24
- * License: CC0
- * Source: Wikipedia, tinyKACTL
  * Description: Push-relabel using the highest label selection rule and the gap heuristic. Quite fast in practice.
  *  To obtain the actual flow, look at positive values only.
  * Time: $O(V^2\sqrt E)$
  * Status: Tested on Kattis and SPOJ, and stress-tested
  */
-#pragma once
-
-
 struct PushRelabel {
 	struct Edge {
 		int dest, back;

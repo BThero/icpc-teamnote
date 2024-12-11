@@ -1,15 +1,10 @@
 /**
- * Author: chilli
- * License: CC0
- * Source: Own work
  * Description: Read an integer from stdin. Usage requires your program to pipe in
  * input from file.
  * Usage: ./a.out < input.txt
  * Time: About 5x as fast as cin/scanf.
  * Status: tested on SPOJ INTEST, unit tested
  */
-#pragma once
-
 inline char gc() { // like getchar()
 	static char buf[1 << 16];
 	static size_t bc, be;

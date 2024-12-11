@@ -1,8 +1,4 @@
 /**
- * Author: Bjorn Martinsson
- * Date: 2020-06-03
- * License: CC0
- * Source: own work
  * Description: Returns the smallest $x > 0$ s.t. $a^x = b \pmod m$, or
  * $-1$ if no such $x$ exists. modLog(a,1,m) can be used to
  * calculate the order of $a$.
@@ -30,8 +26,6 @@
  * exponents of a that are <= n, and then handling the non-tricky cases by
  * a simple gcd(a^n,m) == gcd(b,m) check.
  */
-#pragma once
-
 ll modLog(ll a, ll b, ll m) {
 	ll n = (ll) sqrt(m) + 1, e = 1, f = 1, j = 1;
 	unordered_map<ll, ll> A;

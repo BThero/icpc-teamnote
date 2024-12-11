@@ -1,8 +1,4 @@
 /**
- * Author: Ulf Lundstrom
- * Date: 2009-04-07
- * License: CC0
- * Source: My geometric reasoning
  * Description: Returns the shortest distance on the sphere with radius radius between the points
  * with azimuthal angles (longitude) f1 ($\phi_1$) and f2 ($\phi_2$) from x axis and zenith angles
  * (latitude) t1 ($\theta_1$) and t2 ($\theta_2$) from z axis (0 = north pole). All angles measured
@@ -11,8 +7,6 @@
  * between the two points in the x direction and d*radius is the total distance between the points.
  * Status: tested on kattis:airlinehub
  */
-#pragma once
-
 double sphericalDistance(double f1, double t1,
 		double f2, double t2, double radius) {
 	double dx = sin(t2)*cos(f2) - sin(t1)*cos(f1);

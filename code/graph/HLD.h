@@ -1,8 +1,4 @@
 /**
- * Author: Benjamin Qi, Oleksandr Kulkov, chilli
- * Date: 2020-01-12
- * License: CC0
- * Source: https://codeforces.com/blog/entry/53170, https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Trees%20(10)/HLD%20(10.3).h
  * Description: Decomposes a tree into vertex disjoint heavy paths and light
  * edges such that the path from any leaf to the root contains at most log(n)
  * light edges. Code does additive modifications and max queries, but can
@@ -13,8 +9,6 @@
  * Time: O((\log N)^2)
  * Status: stress-tested against old HLD
  */
-#pragma once
-
 #include "../data-structures/LazySegmentTree.h"
 
 template <bool VALS_EDGES> struct HLD {

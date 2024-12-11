@@ -1,8 +1,4 @@
 /**
- * Author: Ulf Lundstrom
- * Date: 2009-03-21
- * License: CC0
- * Source:
  * Description: Returns where $p$ is as seen from $s$ towards $e$. 1/0/-1 $\Leftrightarrow$ left/on line/right.
  * If the optional argument $eps$ is given 0 is returned if $p$ is within distance $eps$ from the line.
  * P is supposed to be Point<T> where T is e.g. double or long long.
@@ -11,8 +7,6 @@
  * 	bool left = sideOf(p1,p2,q)==1;
  * Status: tested
  */
-#pragma once
-
 #include "Point.h"
 
 template<class P>

@@ -1,8 +1,4 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-01-31
- * License: CC0
- * Source: me
  * Description: A class for ordering angles (as represented by int points and
  *  a number of rotations around the origin). Useful for rotational sweeping.
  *  Sometimes also represents points or vectors.
@@ -12,8 +8,6 @@
  *  // sweeps j such that (j-i) represents the number of positively oriented triangles with vertices at 0 and i
  * Status: Used, works well
  */
-#pragma once
-
 struct Angle {
 	int x, y;
 	int t;

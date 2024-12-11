@@ -1,8 +1,4 @@
 /**
- * Author: Per Austrin, Ulf Lundstrom
- * Date: 2009-04-09
- * License: CC0
- * Source:
  * Description:\\
 \begin{minipage}{75mm}
  Apply the linear transformation (translation, rotation and scaling) which takes line p0-p1 to line q0-q1 to point r.
@@ -14,8 +10,6 @@
 \end{minipage}
  * Status: not tested
  */
-#pragma once
-
 #include "Point.h"
 
 typedef Point<double> P;

@@ -1,7 +1,4 @@
 /**
- * Author: Unknown
- * Date: 2017-05-15
- * Source: https://e-maxx.ru/algo/ukkonen
  * Description: Ukkonen's algorithm for online suffix tree construction.
  *  Each node contains indices [l, r) into the string, and a list of child nodes.
  *  Suffixes are given by traversals of this tree, joining [l, r) substrings.
@@ -11,8 +8,6 @@
  * Time: $O(26N)$
  * Status: stress-tested a bit
  */
-#pragma once
-
 struct SuffixTree {
 	enum { N = 200010, ALPHA = 26 }; // N ~ 2*maxlen+10
 	int toi(char c) { return c - 'a'; }

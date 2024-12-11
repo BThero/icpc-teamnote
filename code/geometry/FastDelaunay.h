@@ -1,8 +1,4 @@
 /**
- * Author: Philippe Legault
- * Date: 2016
- * License: MIT
- * Source: https://github.com/Bathlamos/delaunay-triangulation/
  * Description: Fast Delaunay triangulation.
  * Each circumcircle contains none of the input points.
  * There must be no duplicate points.
@@ -12,8 +8,6 @@
  * Time: O(n \log n)
  * Status: stress-tested
  */
-#pragma once
-
 #include "Point.h"
 
 typedef Point<ll> P;

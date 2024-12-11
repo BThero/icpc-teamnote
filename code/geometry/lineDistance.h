@@ -1,8 +1,4 @@
 /**
- * Author: Ulf Lundstrom
- * Date: 2009-03-21
- * License: CC0
- * Source: Basic math
  * Description:\\
 \begin{minipage}{75mm}
 Returns the signed distance between point p and the line containing points a and b.
@@ -16,8 +12,6 @@ Using Point3D will always give a non-negative distance. For Point3D, call .dist 
 \end{minipage}
  * Status: tested
  */
-#pragma once
-
 #include "Point.h"
 
 template<class P>

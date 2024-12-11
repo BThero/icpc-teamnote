@@ -1,8 +1,4 @@
 /**
- * Author: Chen Xing
- * Date: 2009-10-13
- * License: CC0
- * Source: N/A
  * Description: Fast bipartite matching algorithm. Graph $g$ should be a list
  * of neighbors of the left partition, and $btoa$ should be a vector full of
  * -1's of the same size as the right partition. Returns the size of
@@ -12,8 +8,6 @@
  * Time: O(\sqrt{V}E)
  * Status: stress-tested by MinimumVertexCover, and tested on oldkattis.adkbipmatch and SPOJ:MATCHING
  */
-#pragma once
-
 bool dfs(int a, int L, vector<vi>& g, vi& btoa, vi& A, vi& B) {
 	if (A[a] != L) return 0;
 	A[a] = -1;

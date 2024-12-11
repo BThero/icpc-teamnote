@@ -1,8 +1,4 @@
 /**
- * Author: Victor Lecomte, chilli
- * Date: 2019-04-26
- * License: CC0
- * Source: https://vlecomte.github.io/cp-geo.pdf
  * Description: Returns true if p lies within the polygon. If strict is true,
  * it returns false for points on the boundary. The algorithm uses
  * products in intermediate steps so watch out for overflow.
@@ -12,8 +8,6 @@
  * bool in = inPolygon(v, P{3, 3}, false);
  * Status: stress-tested and tested on kattis:pointinpolygon
  */
-#pragma once
-
 #include "Point.h"
 #include "OnSegment.h"
 #include "SegmentDistance.h"

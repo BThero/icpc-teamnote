@@ -1,8 +1,4 @@
 /**
- * Author: chilli
- * Date: 2019-04-25
- * License: CC0
- * Source: http://neerc.ifmo.ru/trains/toulouse/2017/fft2.pdf
  * Description: Higher precision FFT, can be used for convolutions modulo arbitrary integers
  * as long as $N\log_2N\cdot \text{mod} < 8.6 \cdot 10^{14}$ (in practice $10^{16}$ or higher).
  * Inputs must be in $[0, \text{mod})$.
@@ -11,8 +7,6 @@
  * Details: An in-depth examination of precision for both FFT and FFTMod can be found
  * here (https://github.com/simonlindholm/fft-precision/blob/master/fft-precision.md)
  */
-#pragma once
-
 #include "FastFourierTransform.h"
 
 typedef vector<ll> vl;

@@ -1,8 +1,4 @@
 /**
- * Author: Victor Lecomte, chilli
- * Date: 2019-05-05
- * License: CC0
- * Source: https://vlecomte.github.io/cp-geo.pdf
  * Description:\\
 \begin{minipage}{75mm}
 If a unique intersection point of the lines going through s1,e1 and s2,e2 exists \{1, point\} is returned.
@@ -19,8 +15,6 @@ Products of three coordinates are used in intermediate steps so watch out for ov
  * 		cout << "intersection point at " << res.second << endl;
  * Status: stress-tested, and tested through half-plane tests
  */
-#pragma once
-
 #include "Point.h"
 
 template<class P>

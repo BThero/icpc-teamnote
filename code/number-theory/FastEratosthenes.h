@@ -1,7 +1,4 @@
 /**
- * Author: Jakob Kogler, chilli, pajenegod
- * Date: 2020-04-12
- * License: CC0
  * Description: Prime sieve for generating all primes smaller than LIM.
  * Time: LIM=1e9 $\approx$ 1.5s
  * Status: Stress-tested
@@ -15,8 +12,6 @@
  * The line `for (int i=idx; i<S+L; idx = (i += p))` is done on purpose for performance reasons.
  * Se https://github.com/kth-competitive-programming/kactl/pull/166#discussion_r408354338
  */
-#pragma once
-
 const int LIM = 1e6;
 bitset<LIM> isPrime;
 vi eratosthenes() {
